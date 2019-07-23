@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main()
+{
+	int x=1;
+	int y=1;
+	int i;
+	int box=1;
+	
+	int row;
+	int column;
+
+	printf("please write you edge leght of square\n");
+	scanf("%d", &box);
+		while(box<1 || box>8)
+	{
+				printf("please sellect number between 1 and 8\n");
+				scanf("%d", &box);
+	}
+		
+			
+
+	printf("row:");
+	scanf("%d", &row);
+		while(row<1 || row>box)
+		{
+			printf("please sellect number betwen 1 and %d \n", box);
+			scanf("%d", &row);
+		}
+	
+	printf("\ncolumn:");
+	scanf("%d", &column);
+	printf("\n");
+		while(column<1 || column>box)
+	{
+		printf("please sellect number betwen 1 and %d \n", box);
+		scanf("%d", &column);
+	}
+
+	while(y<=box)
+	{
+		if(x<=box && x!=row)
+			{
+				printf("|_|");
+				x++;
+			}
+		else if(x==row && y!=column)
+			{
+				printf("|_|");
+				x++;
+			}
+		else if(x==row && y==column)
+			{
+				printf("|x|");
+				x++;
+			}
+		else
+			{
+				printf("\n");
+				y++;
+				x=1;
+			}
+	}
+//Taylan Caner Alaş 2019
+}
