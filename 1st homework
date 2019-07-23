@@ -1,0 +1,33 @@
+#include <stdio.h>
+//this code displays surpass time of cars
+int main()
+{
+	int c1v; //first car's velocity
+	int c2v; //second car's velocity
+	int vsum=0; //sum of velocitys
+	int d=0; //distance
+	int time=0; 
+	int b; //used that variable to make operation easy
+	
+	printf("c1\n");
+	scanf("%d", &c1v); 
+	
+	printf("c2\n");
+	scanf("%d", &c2v);
+	
+	printf("d\n");
+	scanf("%d", &d);
+	
+	printf("c1=%d, c2=%d, d=%d \n\n", c1v, c2v, d);
+	
+	vsum= c1v+c2v;
+	printf("vsum = %d\n\n", vsum);
+	
+	for(time; d>0; time++) //there is a warning for "time" and the warming is "expression result unused"
+	{
+		d = d-vsum;
+	}
+	printf("time is %d", time);
+}
+ 
+ //Taylan Caner Alaş 2019 
