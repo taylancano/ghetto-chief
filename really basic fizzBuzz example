@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+printf("1,"); //because I dont want to start with "escape"
+	
+  
+  for(int i=2; i<100; i++)  //my loop start with 2
+	{
+		if(i%5==0 && i%3==0)	//if my first question is i%integer==0 it cant write fizzBuzz. 
+			{
+				printf(" fizzBuzz,");
+			}
+		else if(i%3==0)
+		{
+			printf(" fizz,");
+		}
+		else if(i%5==0)
+		{
+			printf(" buzz,");
+		}
+		else
+		{
+			printf(" %d,", i);
+		}
+	}
+printf(" BUZZZZ");  //because ı dont want to see "," at the end of my code
+}
+
+//taylancamo 2019
